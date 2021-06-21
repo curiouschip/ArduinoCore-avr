@@ -1,0 +1,12 @@
+.DS_Store
+
+*.lst
+*.d
+*.o
+
+Caterina.eep
+Caterina.elf
+Caterina.hex
+Caterina.lss
+Caterina.map
+Caterina.sym
