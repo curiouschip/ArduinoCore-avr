@@ -191,28 +191,14 @@ const USB_Descriptor_String_t LanguageString =
  */
 const USB_Descriptor_String_t ProductString =
 {
-	.Header                 = {.Size = USB_STRING_LEN(16), .Type = DTYPE_String},
-
-	#if DEVICE_PID == 0x0036
-	.UnicodeString          = L"Arduino Leonardo" 
-	#elif DEVICE_PID == 0x0037
-	.UnicodeString			= L"Arduino Micro   "
-	#elif DEVICE_PID == 0x003C
-	.UnicodeString			= L"Arduino Esplora "
-	#else
-	.UnicodeString			= L"USB IO board    "
-	#endif
+	.Header                 = {.Size = USB_STRING_LEN(8), .Type = DTYPE_String},
+	.UnicodeString			= L"PipTouch"
 };
 
 const USB_Descriptor_String_t ManufNameString = 
 {
-	.Header					= {.Size = USB_STRING_LEN(11), .Type = DTYPE_String},
-	
-	#if DEVICE_VID == 0x2341
-	.UnicodeString			= L"Arduino LLC"
-	#else
-	.UnicodeString			= L"Unknown    "
-	#endif
+	.Header					= {.Size = USB_STRING_LEN(12), .Type = DTYPE_String},
+	.UnicodeString			= L"Curious Chip"
 };
 
 /** This function is called by the library when in device mode, and must be overridden (see LUFA library "USB Descriptors"
